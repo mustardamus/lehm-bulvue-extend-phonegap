@@ -1,0 +1,36 @@
+{{! appNamespace # App Namespace (com.you.yourapp) }}
+{{! appName # App Name }}
+{{! appDescription # App Description }}
+{{! authorEmail # Author E-Mail }}
+{{! authorUrl # Author Website (http://yoursite.com) }}
+{{! authorName # Author Name }}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{appName}}</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <meta name="language" content="en"/>
+    <meta name="title" content="{{appName}}"/>
+    <meta name="description" content="{{appDescription}}"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="{{authorName}} <{{authorEmail}}>"/>
+
+    <link rel="shortcut icon" href="/assets/favicon.png"/>
+    <link rel="stylesheet" href="build.css" media="screen" charset="utf-8"/>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <script src="cordova.js"></script>
+    <script src="build.js"></script>
+  </body>
+</html>

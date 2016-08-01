@@ -1,0 +1,19 @@
+{
+  "config": {
+    "phonegapServerPort": 9009
+  },
+  "scripts": {
+    "phonegap:requirements": "cordova requirements",
+    "phonegap:prepare:browser": "cordova platform add browser",
+    "phonegap:prepare:android": "cordova platform add android",
+    "phonegap:prepare:ios": "cordova platform add ios",
+    "phonegap:run:android": "cordova run android",
+    "phonegap:run:ios": "cordova run ios",
+    "phonegap:compile:android": "cordova compile android",
+    "phonegap:compile:ios": "cordova compile ios",
+    "phonegap:build:android": "npm run client:clean && npm run client:copy && npm run client:build:prod && cordova build android --release --device",
+    "phonegap:build:ios": "npm run client:clean && npm run client:copy && npm run client:build:prod && cordova build ios --release --device",
+    "phonegap:serve": "phonegap serve --port $npm_package_config_phonegapServerPort",
+    "phonegap": "npm run client:clean && npm run client:copy && npm run client:watch & npm run phonegap:serve"
+  }
+}
