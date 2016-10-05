@@ -2,7 +2,7 @@
 
 module.exports = {
   name: 'Frontend Extend with Phonegap',
-  description: 'https://github.com/mustardamus/lehm-frontend-extend-phonegap',
+  description: 'https://github.com/mustardamus/lehm-bulvue-extend-phonegap',
   delimiters: '{{ }}',
   ignore: ['README.md', 'package.json'],
 
